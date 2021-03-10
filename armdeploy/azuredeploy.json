@@ -211,7 +211,7 @@
                                             "value": "[parameters('storageId')]"
                                         },
                                         "networkWatcherRG": {
-                                            "value": "[[if(empty(coalesce(field('Microsoft.Network/networkSecurityGroups/flowLogs'))), parameters('networkWatcherRG'), split(first(field('Microsoft.Network/networkSecurityGroups/flowLogs[*].id')), '/')[4])]"
+                                            "value": "[parameters('networkWatcherRG')]"
                                         },
                                         "networkWatcherName": {
                                             "value": "[[if(empty(coalesce(field('Microsoft.Network/networkSecurityGroups/flowLogs'))), parameters('networkWatcherName'), split(first(field('Microsoft.Network/networkSecurityGroups/flowLogs[*].id')), '/')[8])]"
