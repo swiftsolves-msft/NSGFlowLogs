@@ -33,4 +33,4 @@ $policyScope = "/subscriptions/SUBID"
 
 $date = get-date -Format "MMyyddhhmm"
 
-New-AzSubscriptionDeployment -Name $date -Location $nsgRegion -TemplateUri "https://raw.githubusercontent.com/swiftsolves-msft/NSGFlowLogs/main/azuredeploy.json" -nsgRegion $nsgRegion -storageId $storageId -logAnalyticsWorkspaceId $logAnalyticsWorkspaceId -workspaceId $workspaceId -workspaceRegion $workspaceRegion -networkWatcherRG $networkWatcherRG -networkWatcherName $networkWatcherName -policyScope $policyScope```
+New-AzSubscriptionDeployment -Name $date -Location $nsgRegion -TemplateUri "https://raw.githubusercontent.com/swiftsolves-msft/NSGFlowLogs/main/azuredeploy.json" -nsgRegion $nsgRegion -storageId $storageId -logAnalyticsWorkspaceId $logAnalyticsWorkspaceId -workspaceId $workspaceId -workspaceRegion $workspaceRegion -networkWatcherRG $networkWatcherRG -networkWatcherName $networkWatcherName -policyScope $policyScope
